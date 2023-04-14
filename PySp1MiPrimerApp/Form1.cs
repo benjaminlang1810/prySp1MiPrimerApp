@@ -10,11 +10,41 @@ using System.Windows.Forms;
 
 namespace PySp1MiPrimerApp
 {
-    public partial class Form1 : Form
+    public partial class FrmPantallaPrincipal : Form
     {
-        public Form1()
+        public FrmPantallaPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmPantallaPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cancelar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
