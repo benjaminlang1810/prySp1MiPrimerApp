@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPantallaPrincipal));
             this.txtIngresos = new System.Windows.Forms.TextBox();
             this.lblIngresos = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Cancelar = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblSaldoSobrante = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.lblGastosExtras = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Cancelar = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblComida = new System.Windows.Forms.Label();
             this.lblImpuestos = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblAlquiler = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtIngresos
@@ -84,41 +85,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inicio";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(9, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 29);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Grabar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // Cancelar
-            // 
-            this.Cancelar.AccessibleDescription = "";
-            this.Cancelar.Location = new System.Drawing.Point(199, 16);
-            this.Cancelar.Name = "Cancelar";
-            this.Cancelar.Size = new System.Drawing.Size(116, 29);
-            this.Cancelar.TabIndex = 9;
-            this.Cancelar.Text = "Cancelar";
-            this.Cancelar.UseVisualStyleBackColor = true;
-            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.lblComida);
-            this.groupBox2.Controls.Add(this.lblImpuestos);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.lblAlquiler);
-            this.groupBox2.Location = new System.Drawing.Point(63, 66);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(338, 106);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Gastos Fijos ";
             // 
             // groupBox3
             // 
@@ -167,6 +133,52 @@
             this.lblGastosExtras.TabIndex = 0;
             this.lblGastosExtras.Text = "Gasto Extra";
             this.lblGastosExtras.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button1);
+            this.groupBox4.Controls.Add(this.Cancelar);
+            this.groupBox4.Location = new System.Drawing.Point(89, 294);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(332, 53);
+            this.groupBox4.TabIndex = 11;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Fin";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(9, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 29);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Grabar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Cancelar
+            // 
+            this.Cancelar.AccessibleDescription = "";
+            this.Cancelar.Location = new System.Drawing.Point(199, 16);
+            this.Cancelar.Name = "Cancelar";
+            this.Cancelar.Size = new System.Drawing.Size(116, 29);
+            this.Cancelar.TabIndex = 9;
+            this.Cancelar.Text = "Cancelar";
+            this.Cancelar.UseVisualStyleBackColor = true;
+            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.lblComida);
+            this.groupBox2.Controls.Add(this.lblImpuestos);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.lblAlquiler);
+            this.groupBox2.Location = new System.Drawing.Point(63, 66);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(338, 106);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Gastos Fijos ";
             // 
             // textBox3
             // 
@@ -218,33 +230,23 @@
             this.lblAlquiler.TabIndex = 3;
             this.lblAlquiler.Text = "Alquiler";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.Cancelar);
-            this.groupBox4.Location = new System.Drawing.Point(89, 294);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(332, 53);
-            this.groupBox4.TabIndex = 11;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Fin";
-            // 
             // FrmPantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 355);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPantallaPrincipal";
             this.Text = "Gestion De Gastos";
             this.Load += new System.EventHandler(this.FrmPantallaPrincipal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
