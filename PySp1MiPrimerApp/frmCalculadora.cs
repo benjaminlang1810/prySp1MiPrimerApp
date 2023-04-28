@@ -12,6 +12,11 @@ namespace PySp1MiPrimerApp
 {
     public partial class FrmPantallaPrincipal : Form
     {
+        decimal varIngresos = 0;
+        decimal varAlquiler = 0;
+        decimal varImpuestos = 0;
+        decimal varComida = 0;
+        decimal varExtra = 0;
         public FrmPantallaPrincipal()
         {
             InitializeComponent();
@@ -60,6 +65,16 @@ namespace PySp1MiPrimerApp
         private void groupBox1_Enter_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            varIngresos = Convert.ToDecimal(txtIngresos.Text);
+            varAlquiler = Convert.ToDecimal(txtAlquiler.Text);
+            varImpuestos = Convert.ToDecimal(txtImpuestos.Text);
+            varComida = Convert.ToDecimal(txtComida.Text);
+            varExtra = Convert.ToDecimal(txtExtra.Text);
+        
         }
     }
 }

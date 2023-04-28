@@ -31,26 +31,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPantallaPrincipal));
             this.txtIngresos = new System.Windows.Forms.TextBox();
             this.lblIngresos = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.mrcInicio = new System.Windows.Forms.GroupBox();
+            this.mrcExtra = new System.Windows.Forms.GroupBox();
+            this.txtSobrante = new System.Windows.Forms.TextBox();
             this.lblSaldoSobrante = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtExtra = new System.Windows.Forms.TextBox();
             this.lblGastosExtras = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Cancelar = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.mrcFin = new System.Windows.Forms.GroupBox();
+            this.cmdGrabar = new System.Windows.Forms.Button();
+            this.cmdCancelar = new System.Windows.Forms.Button();
+            this.mrcFijos = new System.Windows.Forms.GroupBox();
+            this.txtComida = new System.Windows.Forms.TextBox();
+            this.txtImpuestos = new System.Windows.Forms.TextBox();
             this.lblComida = new System.Windows.Forms.Label();
             this.lblImpuestos = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAlquiler = new System.Windows.Forms.TextBox();
             this.lblAlquiler = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.mrcInicio.SuspendLayout();
+            this.mrcExtra.SuspendLayout();
+            this.mrcFin.SuspendLayout();
+            this.mrcFijos.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtIngresos
@@ -70,42 +70,42 @@
             this.lblIngresos.TabIndex = 2;
             this.lblIngresos.Text = "Ingresos";
             // 
-            // groupBox1
+            // mrcInicio
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.lblIngresos);
-            this.groupBox1.Controls.Add(this.txtIngresos);
-            this.groupBox1.Location = new System.Drawing.Point(0, -3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(428, 361);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Inicio";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            this.mrcInicio.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.mrcInicio.Controls.Add(this.mrcExtra);
+            this.mrcInicio.Controls.Add(this.mrcFin);
+            this.mrcInicio.Controls.Add(this.mrcFijos);
+            this.mrcInicio.Controls.Add(this.lblIngresos);
+            this.mrcInicio.Controls.Add(this.txtIngresos);
+            this.mrcInicio.Location = new System.Drawing.Point(0, -3);
+            this.mrcInicio.Name = "mrcInicio";
+            this.mrcInicio.Size = new System.Drawing.Size(428, 361);
+            this.mrcInicio.TabIndex = 3;
+            this.mrcInicio.TabStop = false;
+            this.mrcInicio.Text = "Inicio";
+            this.mrcInicio.Enter += new System.EventHandler(this.groupBox1_Enter_1);
             // 
-            // groupBox3
+            // mrcExtra
             // 
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.lblSaldoSobrante);
-            this.groupBox3.Controls.Add(this.textBox4);
-            this.groupBox3.Controls.Add(this.lblGastosExtras);
-            this.groupBox3.Location = new System.Drawing.Point(121, 178);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(280, 110);
-            this.groupBox3.TabIndex = 9;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Saldo Extra";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            this.mrcExtra.Controls.Add(this.txtSobrante);
+            this.mrcExtra.Controls.Add(this.lblSaldoSobrante);
+            this.mrcExtra.Controls.Add(this.txtExtra);
+            this.mrcExtra.Controls.Add(this.lblGastosExtras);
+            this.mrcExtra.Location = new System.Drawing.Point(121, 178);
+            this.mrcExtra.Name = "mrcExtra";
+            this.mrcExtra.Size = new System.Drawing.Size(280, 110);
+            this.mrcExtra.TabIndex = 9;
+            this.mrcExtra.TabStop = false;
+            this.mrcExtra.Text = "Saldo Extra";
+            this.mrcExtra.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // textBox5
+            // txtSobrante
             // 
-            this.textBox5.Location = new System.Drawing.Point(105, 50);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 3;
+            this.txtSobrante.Location = new System.Drawing.Point(105, 50);
+            this.txtSobrante.Name = "txtSobrante";
+            this.txtSobrante.Size = new System.Drawing.Size(100, 20);
+            this.txtSobrante.TabIndex = 3;
             // 
             // lblSaldoSobrante
             // 
@@ -117,12 +117,12 @@
             this.lblSaldoSobrante.Text = "Saldo Sobrante";
             this.lblSaldoSobrante.Click += new System.EventHandler(this.label6_Click);
             // 
-            // textBox4
+            // txtExtra
             // 
-            this.textBox4.Location = new System.Drawing.Point(105, 24);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtExtra.Location = new System.Drawing.Point(105, 24);
+            this.txtExtra.Name = "txtExtra";
+            this.txtExtra.Size = new System.Drawing.Size(100, 20);
+            this.txtExtra.TabIndex = 1;
             // 
             // lblGastosExtras
             // 
@@ -134,65 +134,66 @@
             this.lblGastosExtras.Text = "Gasto Extra";
             this.lblGastosExtras.Click += new System.EventHandler(this.label5_Click);
             // 
-            // groupBox4
+            // mrcFin
             // 
-            this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.Cancelar);
-            this.groupBox4.Location = new System.Drawing.Point(89, 294);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(332, 53);
-            this.groupBox4.TabIndex = 11;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Fin";
+            this.mrcFin.Controls.Add(this.cmdGrabar);
+            this.mrcFin.Controls.Add(this.cmdCancelar);
+            this.mrcFin.Location = new System.Drawing.Point(89, 294);
+            this.mrcFin.Name = "mrcFin";
+            this.mrcFin.Size = new System.Drawing.Size(332, 53);
+            this.mrcFin.TabIndex = 11;
+            this.mrcFin.TabStop = false;
+            this.mrcFin.Text = "Fin";
             // 
-            // button1
+            // cmdGrabar
             // 
-            this.button1.Location = new System.Drawing.Point(9, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 29);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Grabar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdGrabar.Location = new System.Drawing.Point(9, 16);
+            this.cmdGrabar.Name = "cmdGrabar";
+            this.cmdGrabar.Size = new System.Drawing.Size(108, 29);
+            this.cmdGrabar.TabIndex = 10;
+            this.cmdGrabar.Text = "Grabar";
+            this.cmdGrabar.UseVisualStyleBackColor = true;
+            this.cmdGrabar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Cancelar
+            // cmdCancelar
             // 
-            this.Cancelar.AccessibleDescription = "";
-            this.Cancelar.Location = new System.Drawing.Point(199, 16);
-            this.Cancelar.Name = "Cancelar";
-            this.Cancelar.Size = new System.Drawing.Size(116, 29);
-            this.Cancelar.TabIndex = 9;
-            this.Cancelar.Text = "Cancelar";
-            this.Cancelar.UseVisualStyleBackColor = true;
-            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
+            this.cmdCancelar.AccessibleDescription = "";
+            this.cmdCancelar.Location = new System.Drawing.Point(196, 16);
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(116, 29);
+            this.cmdCancelar.TabIndex = 9;
+            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Click += new System.EventHandler(this.Cancelar_Click);
             // 
-            // groupBox2
+            // mrcFijos
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.lblComida);
-            this.groupBox2.Controls.Add(this.lblImpuestos);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.lblAlquiler);
-            this.groupBox2.Location = new System.Drawing.Point(63, 66);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(338, 106);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Gastos Fijos ";
+            this.mrcFijos.Controls.Add(this.txtComida);
+            this.mrcFijos.Controls.Add(this.txtImpuestos);
+            this.mrcFijos.Controls.Add(this.lblComida);
+            this.mrcFijos.Controls.Add(this.lblImpuestos);
+            this.mrcFijos.Controls.Add(this.txtAlquiler);
+            this.mrcFijos.Controls.Add(this.lblAlquiler);
+            this.mrcFijos.Location = new System.Drawing.Point(63, 66);
+            this.mrcFijos.Name = "mrcFijos";
+            this.mrcFijos.Size = new System.Drawing.Size(338, 106);
+            this.mrcFijos.TabIndex = 8;
+            this.mrcFijos.TabStop = false;
+            this.mrcFijos.Text = "Gastos Fijos ";
             // 
-            // textBox3
+            // txtComida
             // 
-            this.textBox3.Location = new System.Drawing.Point(64, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 8;
+            this.txtComida.Location = new System.Drawing.Point(64, 79);
+            this.txtComida.Name = "txtComida";
+            this.txtComida.Size = new System.Drawing.Size(100, 20);
+            this.txtComida.TabIndex = 8;
             // 
-            // textBox2
+            // txtImpuestos
             // 
-            this.textBox2.Location = new System.Drawing.Point(64, 53);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtImpuestos.Location = new System.Drawing.Point(64, 53);
+            this.txtImpuestos.Name = "txtImpuestos";
+            this.txtImpuestos.Size = new System.Drawing.Size(100, 20);
+            this.txtImpuestos.TabIndex = 7;
             // 
             // lblComida
             // 
@@ -212,13 +213,13 @@
             this.lblImpuestos.TabIndex = 5;
             this.lblImpuestos.Text = "Impuestos";
             // 
-            // textBox1
+            // txtAlquiler
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtAlquiler.Location = new System.Drawing.Point(64, 21);
+            this.txtAlquiler.Name = "txtAlquiler";
+            this.txtAlquiler.Size = new System.Drawing.Size(100, 20);
+            this.txtAlquiler.TabIndex = 4;
+            this.txtAlquiler.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblAlquiler
             // 
@@ -235,18 +236,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 355);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.mrcInicio);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPantallaPrincipal";
             this.Text = "Gestion De Gastos";
             this.Load += new System.EventHandler(this.FrmPantallaPrincipal_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.mrcInicio.ResumeLayout(false);
+            this.mrcInicio.PerformLayout();
+            this.mrcExtra.ResumeLayout(false);
+            this.mrcExtra.PerformLayout();
+            this.mrcFin.ResumeLayout(false);
+            this.mrcFijos.ResumeLayout(false);
+            this.mrcFijos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -254,22 +255,22 @@
         #endregion
         private System.Windows.Forms.TextBox txtIngresos;
         private System.Windows.Forms.Label lblIngresos;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.GroupBox mrcInicio;
+        private System.Windows.Forms.GroupBox mrcFijos;
+        private System.Windows.Forms.GroupBox mrcExtra;
+        private System.Windows.Forms.TextBox txtSobrante;
         private System.Windows.Forms.Label lblSaldoSobrante;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtExtra;
         private System.Windows.Forms.Label lblGastosExtras;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtComida;
+        private System.Windows.Forms.TextBox txtImpuestos;
         private System.Windows.Forms.Label lblComida;
         private System.Windows.Forms.Label lblImpuestos;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAlquiler;
         private System.Windows.Forms.Label lblAlquiler;
-        private System.Windows.Forms.Button Cancelar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button cmdCancelar;
+        private System.Windows.Forms.Button cmdGrabar;
+        private System.Windows.Forms.GroupBox mrcFin;
     }
 }
 
