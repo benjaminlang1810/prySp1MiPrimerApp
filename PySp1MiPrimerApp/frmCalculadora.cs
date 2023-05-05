@@ -12,60 +12,33 @@ namespace PySp1MiPrimerApp
 {
     public partial class FrmPantallaPrincipal : Form
     {
-        decimal varIngresos = 0;
-        decimal varAlquiler = 0;
-        decimal varImpuestos = 0;
-        decimal varComida = 0;
-        decimal varExtra = 0;
+        decimal varIngresos;
+        decimal varAlquiler;
+        decimal varImpuestos;
+        decimal varComida;
+        decimal varSalidas;
+        decimal varGimnasio;
+        decimal varSobrante;
         public FrmPantallaPrincipal()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         private void FrmPantallaPrincipal_Load(object sender, EventArgs e)
         {
-
+            decimal varIngresos = 0;
+            decimal varAlquiler = 0;
+            decimal varImpuestos = 0;
+            decimal varComida = 0;
+            decimal varSalidas = 0;
+            decimal varGimnasio = 0;
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void Cancelar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -73,8 +46,24 @@ namespace PySp1MiPrimerApp
             varAlquiler = Convert.ToDecimal(txtAlquiler.Text);
             varImpuestos = Convert.ToDecimal(txtImpuestos.Text);
             varComida = Convert.ToDecimal(txtComida.Text);
-            varExtra = Convert.ToDecimal(txtExtra.Text);
-        
+            varSalidas = Convert.ToDecimal(txtSalidas.Text);
+            varGimnasio = Convert.ToDecimal(txtGimnasio.Text);
+
+
+            varSobrante = varIngresos - (varAlquiler + varComida + varSalidas + varImpuestos + varGimnasio);
+
+            txtSobrante.Text = varSobrante.ToString();
+
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSobrante_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
