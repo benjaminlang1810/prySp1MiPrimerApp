@@ -73,6 +73,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAlacena.resx">
+      <DependentUpon>frmAlacena.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCalculadora.resx">
       <DependentUpon>frmCalculadora.cs</DependentUpon>
     </EmbeddedResource>
